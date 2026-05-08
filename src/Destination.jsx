@@ -14,7 +14,10 @@ export default function Destination() {
     setSelectedDestination(name);
   }
 
+  if (!selectedDestination) return null;
+
   // Data is rendered dependant on the selected destination and how this matches to the data file
+
   return (
     <>
       <div className="main-planet-container">
@@ -22,7 +25,7 @@ export default function Destination() {
           <p>01</p> <h2>Pick your destination</h2>
         </div>
         <div className="planet-info-container">
-          <div>
+          <div className="planet-img-container">
             <img src={selectedDestination.images.png} />
           </div>
           <div className="planet-facts-container">

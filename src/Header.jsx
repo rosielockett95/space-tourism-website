@@ -1,7 +1,7 @@
 import logo from "./assets/shared/logo.svg";
 import { Link } from "react-router-dom";
 
-export default function Header({ home, destination, crew, techology }) {
+export default function Header({ home, destination, crew, technology }) {
   return (
     <>
       <div className="header-container">
@@ -15,7 +15,7 @@ export default function Header({ home, destination, crew, techology }) {
           <div className="individual-nav-container">
             <Link to={home}>
               <p>00</p>
-              <a>Home</a>
+              <span>Home</span>
             </Link>
           </div>
           <div className="individual-nav-container">
@@ -31,7 +31,7 @@ export default function Header({ home, destination, crew, techology }) {
             </Link>
           </div>
           <div className="individual-nav-container margin">
-            <Link to={techology}>
+            <Link to={technology}>
               <p>03</p>
               <a>Technology</a>
             </Link>

@@ -1,6 +1,6 @@
 import desktopBackgroundImg from "./assets/home/background-home-desktop.jpg";
 
-export default function pageWrapper({ children }) {
+export default function PageWrapper({ children }) {
   return (
     <>
       <div

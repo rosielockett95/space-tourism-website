@@ -14,7 +14,7 @@ function App() {
           home="/"
           destination="/destination"
           crew="/crew"
-          techology="/technology"
+          technology="/technology"
         />
         <Routes>
           <Route path="/" element={<Home />} />

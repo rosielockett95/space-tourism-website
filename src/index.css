@@ -131,7 +131,9 @@
   margin-right: 100px;
 }
 
-.main-planet-container {
+.main-planet-container,
+.main-crew-container,
+.main-technology-container {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -147,7 +149,8 @@
   align-items: center;
 }
 
-.destination-container p {
+.destination-container p,
+.technology-container p {
   font-family: "Barlow Condensed", sans-serif;
   opacity: 25%;
   font-size: 28px;
@@ -155,7 +158,8 @@
   color: #ffffff;
 }
 
-.destination-container h2 {
+.destination-container h2,
+.technology-container h2 {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 28px;
   letter-spacing: 4px;
@@ -164,11 +168,27 @@
   font-weight: 300;
 }
 
-.planet-info-container {
+.planet-info-container,
+.main-crew-info-container,
+.main-technology-info-container {
   display: flex;
   width: 100%;
   justify-content: space-between;
   color: #ffffff;
+}
+
+.planet-img-container,
+.crew-image-container,
+.technology-image-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.planet-img-container img,
+.crew-image-container img,
+.technology-image-container img {
+  max-width: 100%;
+  height: auto;
 }
 
 .planet-facts-container {
@@ -196,7 +216,9 @@
   cursor: pointer;
 }
 
-.planet-name {
+.planet-name,
+.crew-name,
+.technology-name {
   font-family: "Bellefair", serif;
   font-size: 100px;
   letter-spacing: 0px;
@@ -236,4 +258,22 @@
   font-size: 28px;
   text-transform: uppercase;
   letter-spacing: 0px;
+}
+
+.bullet-btn {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: #888;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.crew-role {
+  font-family: "Bellefair", serif;
+  font-size: 32px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
